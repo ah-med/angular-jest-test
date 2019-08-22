@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DateService } from './__services__/date.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-jest-test';
+
+  constructor(
+    private dateService: DateService
+  ) {
+
+  }
 }
